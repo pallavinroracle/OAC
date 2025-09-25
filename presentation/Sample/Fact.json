@@ -15,7 +15,8 @@
       "sourceLogicalColumn" : "logicalColumn:Sample.Fact.SOURCE_REFERENCE_COL1"
     }, {
       "name" : "SOURCE_VALUE",
-      "sourceLogicalColumn" : "logicalColumn:Sample.Fact.SOURCE_VALUE"
+      "sourceLogicalColumn" : "logicalColumn:Sample.Fact.SOURCE_VALUE",
+      "alternateNames" : [ "test" ]
     } ]
   }
 }

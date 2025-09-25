@@ -2,7 +2,7 @@
   "presentationTable" : {
     "name" : "Dim",
     "presentationColumns" : [ {
-      "name" : "DISTANCE",
+      "name" : "DISTANCE New",
       "sourceLogicalColumn" : "logicalColumn:Sample.Dim.DISTANCE"
     } ]
   }
