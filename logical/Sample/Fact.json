@@ -1,0 +1,93 @@
+{
+  "logicalTable" : {
+    "name" : "Fact",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "DISTANCE",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F_HEALTH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Sample.ADMIN.F_HEALTH.DISTANCE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PROFILE_EXPRESSION",
+      "dataType" : "LONGVARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F_HEALTH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Sample.ADMIN.F_HEALTH.PROFILE_EXPRESSION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "RESULT_REFERENCE_COL1",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F_HEALTH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Sample.ADMIN.F_HEALTH.RESULT_REFERENCE_COL1" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SOURCE_REFERENCE_COL1",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F_HEALTH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Sample.ADMIN.F_HEALTH.SOURCE_REFERENCE_COL1" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SOURCE_VALUE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F_HEALTH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Sample.ADMIN.F_HEALTH.SOURCE_VALUE" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "F_HEALTH",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Sample.ADMIN.F_HEALTH" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:Sample.Dim",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    } ]
+  }
+}

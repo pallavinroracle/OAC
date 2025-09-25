@@ -1,0 +1,31 @@
+{
+  "logicalTable" : {
+    "name" : "Dim",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "DISTANCE",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HEALTH_A",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Sample.ADMIN.HEALTH_A.DISTANCE" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "HEALTH_A",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Sample.ADMIN.HEALTH_A" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ]
+  }
+}

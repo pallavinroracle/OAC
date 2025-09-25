@@ -1,0 +1,17 @@
+{
+  "physicalTable" : {
+    "name" : "F_HEALTH",
+    "sourceTable" : "physicalTable:Sample.ADMIN.HEALTH",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:Sample.ADMIN.HEALTH_A",
+      "useJoinExpression" : true,
+      "joinExpression" : {
+        "expressionTemplate" : "%1 = %2",
+        "expressionObjects" : [ "physicalColumn:Sample.ADMIN.F_HEALTH.DISTANCE", "physicalColumn:Sample.ADMIN.HEALTH_A.DISTANCE" ]
+      },
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

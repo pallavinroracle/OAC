@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "HEALTH_A",
+    "sourceTable" : "physicalTable:Sample.ADMIN.HEALTH",
+    "overrideSourceCacheSetting" : false
+  }
+}

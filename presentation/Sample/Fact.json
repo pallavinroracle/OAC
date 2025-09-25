@@ -1,0 +1,21 @@
+{
+  "presentationTable" : {
+    "name" : "Fact",
+    "presentationColumns" : [ {
+      "name" : "DISTANCE",
+      "sourceLogicalColumn" : "logicalColumn:Sample.Fact.DISTANCE"
+    }, {
+      "name" : "PROFILE_EXPRESSION",
+      "sourceLogicalColumn" : "logicalColumn:Sample.Fact.PROFILE_EXPRESSION"
+    }, {
+      "name" : "RESULT_REFERENCE_COL1",
+      "sourceLogicalColumn" : "logicalColumn:Sample.Fact.RESULT_REFERENCE_COL1"
+    }, {
+      "name" : "SOURCE_REFERENCE_COL1",
+      "sourceLogicalColumn" : "logicalColumn:Sample.Fact.SOURCE_REFERENCE_COL1"
+    }, {
+      "name" : "SOURCE_VALUE",
+      "sourceLogicalColumn" : "logicalColumn:Sample.Fact.SOURCE_VALUE"
+    } ]
+  }
+}

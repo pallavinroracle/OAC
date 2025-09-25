@@ -1,0 +1,36 @@
+{
+  "physicalTable" : {
+    "name" : "HEALTH",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "SOURCE_VALUE",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    }, {
+      "name" : "SOURCE_REFERENCE_COL1",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "RESULT_REFERENCE_COL1",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "DISTANCE",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "PROFILE_EXPRESSION",
+      "dataType" : "LONGVARCHAR",
+      "length" : 32767,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

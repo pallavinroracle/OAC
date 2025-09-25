@@ -1,0 +1,9 @@
+{
+  "presentationTable" : {
+    "name" : "Dim",
+    "presentationColumns" : [ {
+      "name" : "DISTANCE",
+      "sourceLogicalColumn" : "logicalColumn:Sample.Dim.DISTANCE"
+    } ]
+  }
+}
